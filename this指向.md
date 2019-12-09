@@ -95,3 +95,27 @@ console.log(y.x)  //   y.x ==> window.x === 6
 */
 ```
 
+## question 4
+```js
+var a = 11 ; 
+var obj = {
+   a:20
+};
+function fn(){
+   this = obj ;
+   console.log(this.a);
+   console.log(this);
+}
+fn(); 
+```
+<font  color ="red">解析 </font>
+```js
+答案: 报错
+// 在函数中this 一旦确定了,就不可更改
+// this = obj,试图给this赋值, 运行报错
+```
+
+## question 5
+```js
+
+```
